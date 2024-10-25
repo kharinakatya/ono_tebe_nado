@@ -1,7 +1,4 @@
-
-/*начинается голова*/
-
-header {                  /*блок головы*/
+header {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -12,8 +9,7 @@ header {                  /*блок головы*/
   font-size: 18px;
   }
   
-  .header__menu {  /*блок меню*/
-    text-align: left;
+  .header__menu {
     margin: 44px 26.52px 39px 36px;
   }
   
@@ -49,7 +45,6 @@ header {                  /*блок головы*/
   .header__address {
     width: 240.52px;
     height: 98px;
-    padding: 0;
     margin-top: 5px;
     margin-right: 25.48px;
     margin-bottom: 2px;
@@ -67,7 +62,7 @@ header {                  /*блок головы*/
   section.cover {
     display: flex;
     justify-content: center;
-    background-image: url('C:/Users/Katty/dev/first-project/images/cover.jpg');
+    background-image: url('../images/cover.jpg');
     background-size: 1100px 757px;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,8 +97,6 @@ header {                  /*блок головы*/
     position: relative;
     left: 0;
     letter-spacing: 0.3em;
-    padding: 0;
-    margin: 0;
   }
 
   .aligned-text_center {
@@ -112,7 +105,6 @@ header {                  /*блок головы*/
     left: 286px;
     position: relative;
     letter-spacing: 0.3em;
-    padding: 0;
   }
   
   .aligned-text_right {
@@ -121,7 +113,6 @@ header {                  /*блок головы*/
     position: relative;
     left: 583px;
     letter-spacing: 0.3em;
-    padding: 0;
   }
   
   .letter-spacing-extended {
@@ -176,7 +167,7 @@ h3 {
   
   /*начался блок лоты*/
   
-  section.lots {
+  .lots {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,18 +200,15 @@ h2 {
 
   .lots__card-list-item {
     position: relative;
-    height: 563px;
-  }
-
-  .card-link {
-    color: #fff;
-    text-underline-offset: 4px;
+    flex-grow: 1;
+    width: 334px;
+    min-height: 563px;
   }
   
   .card {
-    display: inline-block;
+    display: flex;
     width: 334px;
-    padding-bottom: 48px;
+    height: 100%;
   }
 
   .card__title {
@@ -228,6 +216,9 @@ h2 {
     padding-top: 51px;
     padding-left: 40px;
     padding-right: 40px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 }
   
   .card__title-link {
@@ -246,17 +237,11 @@ h2 {
     padding-right: 40px;
     padding-bottom: 48px;
   }
-  
-  .card__title-link:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-  }
 
   .card_type_film {
     width: 334px;
     min-height: 563px;
-    background-image: url('C:/Users/Katty/dev/first-project/images/card-lot-01.jpg');
+    background-image: url('../images/card-lot-01.jpg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -264,7 +249,7 @@ h2 {
   .card_type_book {
     width: 334px;
     min-height: 563px;
-    background-image: url('C:/Users/Katty/dev/first-project/images/card-lot-02.jpg');
+    background-image: url('../images/card-lot-02.jpg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -272,7 +257,7 @@ h2 {
   .card_type_picture {
     width: 334px;
     min-height: 563px; 
-    background-image: url('C:/Users/Katty/dev/first-project/images/card-lot-03.jpg');
+    background-image: url('../images/card-lot-03.jpg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -388,3 +373,5 @@ footer {
     width: 48px;
     height: 48px;
   }
+
+  /*заканчивается футер*/

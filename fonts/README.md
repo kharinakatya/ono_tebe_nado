@@ -1,1 +1,1 @@
-https://github.com/kharinakatya/ono-tebe-nado
+https://github.com/kharinakatya/ono_tebe_nado
